@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Details</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="images/logo.png" alt="logo" />
+        <h2>Library System</h2>
+      </div>
+      <ul class="sidebar-links">
+        <h4>
+          <span>Menu</span>
+          <div class="menu-separator"></div>
+        </h4>
+        <li>
+          <a href="index.html">
+            <span class="material-symbols-outlined"> dashboard </span
+            >Dashboard</a
+          >
+        </li>
+        <li>
+          <a href="book-details.html"
+            ><span class="material-symbols-outlined"> library_books </span>Book
+            Details</a
+          >
+        </li>
+        <li>
+          <a href="borrowed-books.html"
+            ><span class="material-symbols-outlined"> view_timeline </span
+            >Borrowed Books</a
+          >
+        </li>
+        <li>
+          <a href="transaction.html"
+            ><span class="material-symbols-outlined"> contract </span
+            >Transaction</a
+          >
+        </li>
+      </ul>
+      <div class="user-account">
+        <div class="user-profile">
+          <img src="images/profile.png" alt="Profile Image" />
+          <div class="user-detail">
+            <h3>Admin</h3>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main style="margin-left: 85px">
+      <div class="breadcrumbs">
+        <div class="left">
+          <p>library > <span>BOOK DETAILS</span></p>
+        </div>
+
+        <div class="right">
+          <a href="#">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <section class="add-book-section">
+        <div class="field-container">
+          <form action="" class="field">
+            <h1>Add Book</h1>
+            <input type="text" class="text-fields" placeholder="Title" />
+            <input type="text" class="text-fields" placeholder="ISBN" />
+            <input type="text" class="text-fields" placeholder="Author" />
+            <div class="flex">
+              <input type="text" class="text-fields" placeholder="Genre" />
+              <input type="text" class="text-fields" placeholder="Category" />
+            </div>
+
+            <button class="submit-btn">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
